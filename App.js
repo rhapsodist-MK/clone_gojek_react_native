@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { StyleSheet, View, Text, Image, TextInput, SafeAreaView, ScrollView, TouchableOpacity} from 'react-native'
 
-// import iconHome from './icon/home.png'
+// import iconHome from './src/assets/icon/home.png'
 
 export default class App extends Component {
   render() {
@@ -16,10 +16,10 @@ export default class App extends Component {
                 placeholder="What do you want to eat?" 
                 style={{borderWidth: 1, borderColor: '#e8e8e8', borderRadius: 25, height: 40, paddingLeft: 45, paddingRight: 20, backgroundColor: 'white', marginRight: 18}}
               />
-              <Image source={require('./icon/search.png')} style={{ position: 'absolute', top: 5, left: 12}}/>
+              <Image source={require('./src/assets/icon/search.png')} style={{ position: 'absolute', top: 5, left: 12}}/>
             </View>
             <View style={{width: 35, alignItems: 'center', justifyContent: 'center'}}>
-              <Image source={require('./icon/promo.png')}/>
+              <Image source={require('./src/assets/icon/promo.png')}/>
             </View>
           </View>
           {/* gopay */}
@@ -27,24 +27,24 @@ export default class App extends Component {
             <View 
               style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#2c5fb8', borderTopLeftRadius: 4, borderTopRightRadius: 4, padding: 14}}
             >
-              <Image source={require('./icon/gopay.png')}/>
+              <Image source={require('./src/assets/icon/gopay.png')}/>
               <Text style={{fontSize: 17, fontWeight: 'bold', color: 'white'}}>Ko 50,000</Text>
             </View>
             <View style={{flexDirection: 'row', paddingTop: 20, paddingBottom: 14, backgroundColor: '#2f65bd', borderBottomLeftRadius: 4, borderBottomRightRadius: 4}}>
               <View style={{flex: 1, alignItems: 'center'}}>
-                <Image source={require('./icon/pay.png')} />
+                <Image source={require('./src/assets/icon/pay.png')} />
                 <Text style={{fontSize: 13, fontWeight: 'bold', color: 'white', marginTop: 15}}>Pay</Text>
               </View>
               <View style={{flex: 1, alignItems: 'center'}}>
-                <Image source={require('./icon/nearby.png')} />
+                <Image source={require('./src/assets/icon/nearby.png')} />
                 <Text style={{fontSize: 13, fontWeight: 'bold', color: 'white', marginTop: 15}}>Nearby</Text>
               </View>
               <View style={{flex: 1, alignItems: 'center'}}>
-                <Image source={require('./icon/topup.png')} />
+                <Image source={require('./src/assets/icon/topup.png')} />
                 <Text style={{fontSize: 13, fontWeight: 'bold', color: 'white', marginTop: 15}}>Top up</Text>
               </View>
               <View style={{flex: 1, alignItems: 'center'}}>
-                <Image source={require('./icon/more.png')} />
+                <Image source={require('./src/assets/icon/more.png')} />
                 <Text style={{fontSize: 13, fontWeight: 'bold', color: 'white', marginTop: 15}}>More</Text>
               </View>
             </View>
@@ -54,25 +54,25 @@ export default class App extends Component {
             <View style={{justifyContent: 'space-between', flexDirection: 'row', width: '100%', marginBottom: 18}}>
               <View style={{ width: `${100/4}%` , alignItems: 'center'}}>
                 <View style={{width: 58, height: 58, borderWidth: 1, borderColor: '#EFEFEF', borderRadius: 18, justifyContent: 'center', alignItems: 'center'}}>
-                  <Image source={require('./icon/go-ride.png')} />
+                  <Image source={require('./src/assets/icon/go-ride.png')} />
                 </View>
                 <Text style={{fontSize: 11, fontWeight: 'bold', textAlign: 'center', marginTop: 6}}>GO-RIDE</Text>
               </View>
               <View style={{ width: `${100/4}%`, alignItems: 'center'}}>
                 <View style={{width: 58, height: 58, borderWidth: 1, borderColor: '#EFEFEF', borderRadius: 18, justifyContent: 'center', alignItems: 'center'}}>
-                  <Image source={require('./icon/go-car.png')} />
+                  <Image source={require('./src/assets/icon/go-car.png')} />
                 </View>
                 <Text style={{fontSize: 11, fontWeight: 'bold', textAlign: 'center', marginTop: 6}}>GO-CAR</Text>
               </View>
               <View style={{ width: `${100/4}%`, alignItems: 'center'}}>
                 <View style={{width: 58, height: 58, borderWidth: 1, borderColor: '#EFEFEF', borderRadius: 18, justifyContent: 'center', alignItems: 'center'}}>
-                  <Image source={require('./icon/go-bluebird.png')} />
+                  <Image source={require('./src/assets/icon/go-bluebird.png')} />
                 </View>
                 <Text style={{fontSize: 11, fontWeight: 'bold', textAlign: 'center', marginTop: 6}}>GO-BLUEBIRD</Text>
               </View>
               <View style={{ width: `${100/4}%`, alignItems: 'center'}}>
                 <View style={{width: 58, height: 58, borderWidth: 1, borderColor: '#EFEFEF', borderRadius: 18, justifyContent: 'center', alignItems: 'center'}}>
-                  <Image source={require('./icon/go-send.png')} />
+                  <Image source={require('./src/assets/icon/go-send.png')} />
                 </View>
                 <Text style={{fontSize: 11, fontWeight: 'bold', textAlign: 'center', marginTop: 6}}>GO-SEND</Text>
               </View>
@@ -80,25 +80,25 @@ export default class App extends Component {
             <View style={{justifyContent: 'space-between', flexDirection: 'row', width: '100%'}}>
               <View style={{ width: `${100/4}%`, alignItems: 'center'}}>
                 <View style={{width: 58, height: 58, borderWidth: 1, borderColor: '#EFEFEF', borderRadius: 18, justifyContent: 'center', alignItems: 'center'}}>
-                  <Image source={require('./icon/go-deals.png')} />
+                  <Image source={require('./src/assets/icon/go-deals.png')} />
                 </View>
                 <Text style={{fontSize: 11, fontWeight: 'bold', textAlign: 'center', marginTop: 6}}>GO-DEALS</Text>
               </View>
               <View style={{ width: `${100/4}%`, alignItems: 'center'}}>
                 <View style={{width: 58, height: 58, borderWidth: 1, borderColor: '#EFEFEF', borderRadius: 18, justifyContent: 'center', alignItems: 'center'}}>
-                  <Image source={require('./icon/go-pulsa.png')} />
+                  <Image source={require('./src/assets/icon/go-pulsa.png')} />
                 </View>
                 <Text style={{fontSize: 11, fontWeight: 'bold', textAlign: 'center', marginTop: 6}}>GO-PULSA</Text>
               </View>
               <View style={{ width: `${100/4}%`, alignItems: 'center'}}>
                 <View style={{width: 58, height: 58, borderWidth: 1, borderColor: '#EFEFEF', borderRadius: 18, justifyContent: 'center', alignItems: 'center'}}>
-                  <Image source={require('./icon/go-food.png')} />
+                  <Image source={require('./src/assets/icon/go-food.png')} />
                 </View>
                 <Text style={{fontSize: 11, fontWeight: 'bold', textAlign: 'center', marginTop: 6}}>GO-FOOD</Text>
               </View>
               <View style={{ width: `${100/4}%`, alignItems: 'center'}}>
                 <View style={{width: 58, height: 58, borderWidth: 1, borderColor: '#EFEFEF', borderRadius: 18, justifyContent: 'center', alignItems: 'center'}}>
-                  <Image source={require('./icon/go-more.png')} />
+                  <Image source={require('./src/assets/icon/go-more.png')} />
                 </View>
                 <Text style={{fontSize: 11, fontWeight: 'bold', textAlign: 'center', marginTop: 6}}>GO-MORE</Text>
               </View>
@@ -109,10 +109,10 @@ export default class App extends Component {
           {/* New Section */}
           <View style={{paddingTop: 16, paddingHorizontal: 16}}>
             <View style={{position: 'relative'}}>
-              <Image source={require('./dummy/sepak-bola.jpg')} style={{height: 200, width: '100%', borderRadius: 6}}/>
+              <Image source={require('./src/assets/dummy/sepak-bola.jpg')} style={{height: 200, width: '100%', borderRadius: 6}}/>
               <View style={{width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, backgroundColor: 'black', opacity: 0.2, borderRadius: 6}}></View>
               <View style={{height: 15, width: 55, position: 'absolute', top: 16, left: 16}}>
-                <Image source={require('./logo/white.png')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}}/>
+                <Image source={require('./src/assets/logo/white.png')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}}/>
               </View>
             </View>
             <View style={{paddingTop: 16, paddingBottom: 20, borderBottomColor: '#e8e9ed', borderBottomWidth: 1}}>
@@ -127,12 +127,12 @@ export default class App extends Component {
           {/* Internal Information Section */}
           <View style={{padding: 16, paddingBottom: 0}}>
             <View style={{height: 15, width: 60, marginLeft: -4}}>
-              <Image source={require('./logo/gojek.png')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}}/>
+              <Image source={require('./src/assets/logo/gojek.png')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}}/>
             </View>
             <Text style={{fontSize: 17, fontWeight: 'bold', color: '#1c1c1c', marginTop: 15, marginBottom: 20 }}>Complete your profile</Text>
             <View style={{flexDirection: 'row', marginBottom: 16}}>
               <View>
-                <Image source={require('./dummy/facebook-connect.png')}/>
+                <Image source={require('./src/assets/dummy/facebook-connect.png')}/>
               </View>
               <View style={{marginLeft: 16, flex: 1}}>
                 <Text style={{fontSize: 15, fontWeight: 'bold', color: '#4a4a4a'}}>Connect with Facebook</Text>
@@ -147,10 +147,10 @@ export default class App extends Component {
           {/* gofood Banner Section */}
           <View style={{padding: 16}}>
             <View style={{position: 'relative'}}>
-              <Image source={require('./dummy/food-banner.jpg')} style={{height: 200, width: '100%', borderRadius: 6}}/>
+              <Image source={require('./src/assets/dummy/food-banner.jpg')} style={{height: 200, width: '100%', borderRadius: 6}}/>
               <View style={{width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, backgroundColor: 'black', opacity: 0.15, borderRadius: 6}}></View>
               <View style={{height: 15, width: 55, position: 'absolute', top: 16, left: 16}}>
-                <Image source={require('./logo/white.png')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}}/>
+                <Image source={require('./src/assets/logo/white.png')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}}/>
               </View>
               <View style={{position: 'absolute', bottom: 0, left: 0, width: '100%', flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, paddingBottom: 16}}>
                 <View>
@@ -169,7 +169,7 @@ export default class App extends Component {
           {/* Nearby Go-food */}
           <View>
             <View style={{height: 15, width: 60, marginLeft: 16 }}>
-              <Image source={require('./logo/go-food.png')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}}/>
+              <Image source={require('./src/assets/logo/go-food.png')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}}/>
             </View>
             <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 16, paddingHorizontal: 16}}>
               <Text style={{fontSize: 17, fontWeight: 'bold', color: '#1c1c1c'}}>Nearby Restaurant</Text>
@@ -178,31 +178,31 @@ export default class App extends Component {
             <ScrollView horizontal style={{flexDirection: 'row', paddingLeft: 16}}>
               <View style={{marginRight: 16}}>
                 <View style={{ width: 150, height: 150, borderRadius: 4 }}>
-                  <Image source={require('./dummy/go-food-kfc.jpg')} style={{width: undefined, height: undefined, resizeMode: 'cover', flex: 1, borderRadius: 4}}/>
+                  <Image source={require('./src/assets/dummy/go-food-kfc.jpg')} style={{width: undefined, height: undefined, resizeMode: 'cover', flex: 1, borderRadius: 4}}/>
                 </View>
                 <Text style={{fontSize: 16, fontWeight: 'bold', color: '#1c1c1c'}}>Senderhana Minang</Text>
               </View>
               <View style={{marginRight: 16}}>
                 <View style={{ width: 150, height: 150, borderRadius: 4 }}>
-                  <Image source={require('./dummy/go-food-gm.jpg')} style={{width: undefined, height: undefined, resizeMode: 'cover', flex: 1, borderRadius: 4}}/>
+                  <Image source={require('./src/assets/dummy/go-food-gm.jpg')} style={{width: undefined, height: undefined, resizeMode: 'cover', flex: 1, borderRadius: 4}}/>
                 </View>
                 <Text style={{fontSize: 16, fontWeight: 'bold', color: '#1c1c1c'}}>Senderhana Minang</Text>
               </View>
               <View style={{marginRight: 16}}>
                 <View style={{ width: 150, height: 150, borderRadius: 4 }}>
-                  <Image source={require('./dummy/go-food-banka.jpg')} style={{width: undefined, height: undefined, resizeMode: 'cover', flex: 1, borderRadius: 4}}/>
+                  <Image source={require('./src/assets/dummy/go-food-banka.jpg')} style={{width: undefined, height: undefined, resizeMode: 'cover', flex: 1, borderRadius: 4}}/>
                 </View>
                 <Text style={{fontSize: 16, fontWeight: 'bold', color: '#1c1c1c'}}>Senderhana Minang</Text>
               </View>
               <View style={{marginRight: 16}}>
                 <View style={{ width: 150, height: 150, borderRadius: 4 }}>
-                  <Image source={require('./dummy/go-food-orins.jpg')} style={{width: undefined, height: undefined, resizeMode: 'cover', flex: 1, borderRadius: 4}}/>
+                  <Image source={require('./src/assets/dummy/go-food-orins.jpg')} style={{width: undefined, height: undefined, resizeMode: 'cover', flex: 1, borderRadius: 4}}/>
                 </View>
                 <Text style={{fontSize: 16, fontWeight: 'bold', color: '#1c1c1c'}}>Senderhana Minang</Text>
               </View>
               <View style={{marginRight: 16}}>
                 <View style={{ width: 150, height: 150, borderRadius: 4 }}>
-                  <Image source={require('./dummy/go-food-pak-boss.jpg')} style={{width: undefined, height: undefined, resizeMode: 'cover', flex: 1, borderRadius: 4}}/>
+                  <Image source={require('./src/assets/dummy/go-food-pak-boss.jpg')} style={{width: undefined, height: undefined, resizeMode: 'cover', flex: 1, borderRadius: 4}}/>
                 </View>
                 <Text style={{fontSize: 16, fontWeight: 'bold', color: '#1c1c1c'}}>Senderhana Minang</Text>
               </View>
@@ -214,23 +214,23 @@ export default class App extends Component {
         {/* footer */}
         <View style={{height: 54, flexDirection: 'row', backgroundColor: 'white'}}>
           <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-            <Image style={{width:26, height: 26}} source={ require('./icon/home-active.png')} />
+            <Image style={{width:26, height: 26}} source={ require('./src/assets/icon/home-active.png')} />
             <Text style={{fontSize: 10, color: '#545454', marginTop: 4, color: '#43AB4A'}}>Home</Text>
           </View>
           <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-            <Image style={{width:26, height: 26}} source={ require('./icon/order.png')}/>
+            <Image style={{width:26, height: 26}} source={ require('./src/assets/icon/order.png')}/>
             <Text style={{fontSize: 10, color: '#545454', marginTop: 4}}>Orders</Text>
           </View>
           <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-            <Image style={{width:26, height: 26}} source={ require('./icon/help.png')}/>
+            <Image style={{width:26, height: 26}} source={ require('./src/assets/icon/help.png')}/>
             <Text style={{fontSize: 10, color: '#545454', marginTop: 4}}>Help</Text>
           </View>
           <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-            <Image style={{width:26, height: 26}} source={ require('./icon/inbox.png')}/>
+            <Image style={{width:26, height: 26}} source={ require('./src/assets/icon/inbox.png')}/>
             <Text style={{fontSize: 10, color: '#545454', marginTop: 4}}>Inbox</Text>
           </View>
           <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-            <Image style={{width:26, height: 26}} source={ require('./icon/account.png')}/>
+            <Image style={{width:26, height: 26}} source={ require('./src/assets/icon/account.png')}/>
             <Text style={{fontSize: 10, color: '#545454', marginTop: 4}}>Account</Text>
           </View>
         </View>
