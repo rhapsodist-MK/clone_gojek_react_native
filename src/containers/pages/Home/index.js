@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, SafeAreaView, ScrollView} from 'react-native'
+import { View, SafeAreaView, ScrollView, Alert} from 'react-native'
 
 import SearchFeature from '@molecules/SearchFeature'
 import GoNews from '@molecules/GoNews'
@@ -13,6 +13,7 @@ import NavBar from '@organisms/NavBar'
 
 export default class Home extends Component {
   render() { 
+    const { navigation } = this.props
     return (
       <SafeAreaView style={{flex: 1}}>
         <ScrollView style={{flex: 1, backgroundColor: 'white'}}>
@@ -20,7 +21,7 @@ export default class Home extends Component {
           <HomeGoPay />
           <HomeMainFeature />
           <View style={{height: 17, backgroundColor: '#f2f2f4', marginTop: 20}}></View>
-          <GoNews />
+          <GoNews onPress={() => navigation.navigate('NewsDetail')}/>
           <GoInfo />
           <GoBanner />
           <ScrollableProducts />
