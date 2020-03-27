@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { View, SafeAreaView, ScrollView} from 'react-native'
 
-import SearchFeature from './src/components/molecules/SearchFeature'
-import GoNews from './src/components/molecules/GoNews'
-import GoInfo from './src/components/molecules/GoInfo'
-import GoBanner from './src/components/molecules/GoBanner'
+import SearchFeature from '@molecules/SearchFeature'
+import GoNews from '@molecules/GoNews'
+import GoInfo from '@molecules/GoInfo'
+import GoBanner from '@molecules/GoBanner'
 
 import HomeGoPay from '@organisms/HomeGoPay'
 import ScrollableProducts from '@organisms/ScrollableProducts'
