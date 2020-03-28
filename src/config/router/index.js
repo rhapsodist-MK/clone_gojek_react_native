@@ -1,7 +1,7 @@
 import { createAppContainer, createSwitchNavigator } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 
-import {Home, NewsDetail, Orders, OrderDetail } from '@pages'
+import {Home, NewsDetail, Orders, OrderDetail, ScanQRCode } from '@pages'
 
 const HomeStack = createStackNavigator({
   Home,
@@ -19,10 +19,18 @@ const OrderStack = createStackNavigator({
   initialRouteName: 'Orders'
 })
 
+const ScanStack = createStackNavigator({
+  ScanQRCode
+}, {
+  headerMode: 'none',
+  initialRouteName: 'ScanQRCode'
+})
+
 
 const Router = createSwitchNavigator({
   HomeStack,
-  OrderStack
+  OrderStack,
+  ScanStack
 }, {
   headerMode: 'none',
   initialRouteName: 'HomeStack'
