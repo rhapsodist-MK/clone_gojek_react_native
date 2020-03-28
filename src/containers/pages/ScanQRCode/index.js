@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
+import { RNCamera } from 'react-native-camera'
 
 const IconWithText = ({title}) => {
   return (
@@ -23,7 +24,36 @@ export default class ScanQRCode extends Component {
     return (
       <SafeAreaView style={{flex: 1}}>
         <View style={{flex: 1, backgroundColor: 'gray'}}>
-          <View style={{flexDirection: 'row', paddingHorizontal: 16, justifyContent: 'space-between', marginTop: 16}}>
+          <RNCamera
+            ref={ref => {
+              this.camera = ref;
+            }}
+            style={{
+              width: '100%',
+              height: '100%',
+              flex: 1,
+              justifyContent: 'flex-end',
+              alignItems: 'center'
+            }}
+            type={RNCamera.Constants.Type.back}
+            flashMode={RNCamera.Constants.FlashMode.on}
+            androidCameraPermissionOptions={{
+              title: 'Permission to use camera',
+              message: 'We need your permission to use your camera',
+              buttonPositive: 'Ok',
+              buttonNegative: 'Cancel',
+            }}
+            androidRecordAudioPermissionOptions={{
+              title: 'Permission to use audio recording',
+              message: 'We need your permission to use your audio',
+              buttonPositive: 'Ok',
+              buttonNegative: 'Cancel',
+            }}
+            onGoogleVisionBarcodesDetected={({ barcodes }) => {
+              console.log(barcodes);
+            }}
+          />
+          <View style={{flexDirection: 'row', paddingHorizontal: 16, justifyContent: 'space-between', position: 'absolute', top: 0, left: 0, width: '100%', marginTop: 18}}>
             <IconAction />
             <View style={{flexDirection: 'row', justifyContent: 'space-between', width: 80}}>
               <IconAction />
