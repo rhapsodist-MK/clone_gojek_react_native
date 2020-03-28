@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, SafeAreaView, ScrollView, Alert} from 'react-native'
+import { View, SafeAreaView, ScrollView} from 'react-native'
 
 import SearchFeature from '@molecules/SearchFeature'
 import GoNews from '@molecules/GoNews'
