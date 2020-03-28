@@ -20,7 +20,11 @@ const IconAction = () => {
 }
 
 export default class ScanQRCode extends Component {
+  state = {
+    barcode: 'More Options'
+  }
   render() {
+    const { barcode } = this.state
     return (
       <SafeAreaView style={{flex: 1}}>
         <View style={{flex: 1, backgroundColor: 'gray'}}>
@@ -49,8 +53,9 @@ export default class ScanQRCode extends Component {
               buttonPositive: 'Ok',
               buttonNegative: 'Cancel',
             }}
-            onGoogleVisionBarcodesDetected={({ barcodes }) => {
-              console.log(barcodes);
+            onBarCodeRead={({ barcode }) => {
+              console.log(barcode);
+              this.setState({barcode: barcode.data})
             }}
           />
           <View style={{flexDirection: 'row', paddingHorizontal: 16, justifyContent: 'space-between', position: 'absolute', top: 0, left: 0, width: '100%', marginTop: 18}}>
@@ -68,7 +73,7 @@ export default class ScanQRCode extends Component {
             <View style={{ width: 50, height: 3, backgroundColor: '#e0e0e0', marginVertical: 1}}/>
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
-            <Text style={{fontSize: 20, fontWeight:'bold', color: 'black'}}>More Options</Text>
+            <Text style={{fontSize: 20, fontWeight:'bold', color: 'black'}}>{barcode}</Text>
             <Text style={{fontSize: 14, color: '#61a756', fontWeight:'bold'}}>SHORTCUT</Text>
           </View>
           <View style={{flexDirection: 'row', alignItems: 'flex-start', marginTop: 14, width: '100%'}}>
